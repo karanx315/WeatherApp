@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f8f8f8">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="karan's Android Labs"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#C2185B"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Input for City Name -->
+    <EditText
+        android:id="@+id/cityNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type in the name of a city"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text" />
+
+    <!-- Button to Get Forecast -->
+    <Button
+        android:id="@+id/getForecastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET FORECAST"
+        android:textColor="#ffffff"
+        android:background="#C2185B"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Display Temperature Information -->
+    <TextView
+        android:id="@+id/currentTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The current temperature is --"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/maxTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The max temperature is --"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/minTempTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The min temperature is --"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The humidity is --"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Weather Icon -->
+    <ImageView
+        android:id="@+id/weatherIconImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Weather Icon" />
+
+    <!-- Weather Description -->
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Description"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:textColor="#808080" />
+
+</LinearLayout>
